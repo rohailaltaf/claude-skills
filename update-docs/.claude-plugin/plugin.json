@@ -1,0 +1,8 @@
+{
+  "name": "update-docs",
+  "description": "Updates documentation in the repository after completing work",
+  "version": "1.0.0",
+  "author": {
+    "name": "rohailaltaf"
+  }
+}

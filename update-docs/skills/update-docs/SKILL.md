@@ -13,12 +13,23 @@ Only when the user explicitly requests documentation updates (e.g., "update the 
 
 ## Process
 
-1. **Ask what changes to document** - Before analyzing code, ask the user:
+1. **Ask what to review** - Before analyzing code, ask the user:
    - Uncommitted changes only (staged + unstaged)
-   - Committed changes (specify range or recent commits)
+   - Committed changes (all commits on current branch)
    - Both uncommitted and committed changes
+   - Whole repo (review entire codebase, not just recent changes)
 
-   This determines what code changes to review when updating documentation.
+   **For uncommitted/committed/both:**
+   - Use `git diff` for uncommitted changes
+   - For committed changes, review all commits unique to the current branch (use `git log main..HEAD` or similar)
+   - Focus documentation updates on what changed
+
+   **For "Whole repo" option:**
+   - Explore the codebase structure (key directories, main files, entry points)
+   - Identify features, APIs, and components
+   - Compare existing documentation against actual code
+   - Look for undocumented features, outdated information, or missing sections
+   - This is useful for documentation audits or when docs have drifted significantly from code
 
 2. **Identify documentation files** - Search for:
    - README.md files (root and nested)
@@ -47,10 +58,12 @@ Only when the user explicitly requests documentation updates (e.g., "update the 
    - Suggest a basic structure based on the project type
    - Start minimal and expand based on feedback
 
-6. **Make targeted updates** - Only update sections relevant to the completed work:
+6. **Make targeted updates**:
+   - For change-based reviews: only update sections relevant to the changes
+   - For whole repo reviews: address gaps, outdated info, and missing documentation
    - Don't rewrite entire documents unnecessarily
-   - Add new sections if features are new
-   - Update existing sections if behavior changed
+   - Add new sections for undocumented features
+   - Update existing sections if behavior differs from docs
    - Remove outdated information
 
 ## What to Document

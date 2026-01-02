@@ -7,9 +7,9 @@ A collection of custom skills for Claude Code.
 Updates markdown documentation files after completing work. Invoke with `/update-docs` or by asking Claude to update the docs.
 
 The skill will:
-- Ask what changes to document (uncommitted, committed, or both)
+- Ask what to review (uncommitted, committed, both, or whole repo)
 - Find existing documentation files in your repository
-- Update relevant sections based on recent code changes
+- Update relevant sections based on changes or audit entire docs against codebase
 
 ### How it works
 

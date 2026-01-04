@@ -9,6 +9,12 @@
       "source": "./update-docs",
       "description": "Updates documentation in the repository after completing work",
       "version": "1.1.0"
+    },
+    {
+      "name": "scope-options",
+      "source": "./scope-options",
+      "description": "Think through a feature before building it - explore options, tradeoffs, and scope",
+      "version": "1.0.0"
     }
   ]
 }

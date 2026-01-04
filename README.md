@@ -35,3 +35,23 @@ The skill will:
 /plugin marketplace add rohailaltaf/claude-skills
 /plugin install update-docs@rohailaltaf-skills
 ```
+
+## scope-options
+
+Think through a feature before building it. Invoke with `/scope-options` when you want to explore options, tradeoffs, and scope.
+
+The skill will:
+- Ask for the value prop and any initial ideas
+- Deep dive into your codebase (structure, docs, patterns, similar features)
+- Have an open conversation about options and tradeoffs
+- Help surface edge cases and hidden complexity
+- Naturally nudge towards clarifying constraints like timeline
+
+It's low opinionated - helps you think, doesn't make decisions for you.
+
+### Installation
+
+```
+/plugin marketplace add rohailaltaf/claude-skills
+/plugin install scope-options@rohailaltaf-skills
+```

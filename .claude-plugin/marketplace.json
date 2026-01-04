@@ -13,8 +13,8 @@
     {
       "name": "scope-options",
       "source": "./scope-options",
-      "description": "Think through a feature before building it - explore options, tradeoffs, and scope",
-      "version": "1.0.0"
+      "description": "Plan mode on steroids - push engineers to think with a product mindset before building",
+      "version": "1.1.0"
     }
   ]
 }

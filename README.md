@@ -2,6 +2,11 @@
 
 A collection of custom skills for Claude Code.
 
+## Table of Contents
+
+- [update-docs](#update-docs) - Update documentation after completing work
+- [scope-options](#scope-options) - Plan mode on steroids
+
 ## update-docs
 
 Updates markdown documentation files after completing work. Invoke with `/update-docs` or by asking Claude to update the docs.
@@ -38,16 +43,54 @@ The skill will:
 
 ## scope-options
 
-Think through a feature before building it. Invoke with `/scope-options` when you want to explore options, tradeoffs, and scope.
+Plan mode on steroids. Invoke with `/scope-options` before building a feature.
 
 The skill will:
-- Ask for the value prop and any initial ideas
-- Deep dive into your codebase (structure, docs, patterns, similar features)
-- Have an open conversation about options and tradeoffs
-- Help surface edge cases and hidden complexity
-- Naturally nudge towards clarifying constraints like timeline
+- Ask structured questions (product first, then technical)
+- Push you to define: who benefits, what success looks like, what's MVP, what you're NOT building
+- Deep dive into your codebase to inform options
+- Present 2-5 concrete options with product AND technical tradeoffs
+- Help you narrow down to a direction
 
-It's low opinionated - helps you think, doesn't make decisions for you.
+Forces engineers to think with a product mindset before writing code.
+
+### How it works
+
+1. Invoke with `/scope-options` and describe what you want to build
+
+![Invoke the skill](docs/scope-options/1.png)
+
+2. Select what you want the feature to do
+
+![What to build](docs/scope-options/2.png)
+
+3. Define what problem it solves
+
+![Problem](docs/scope-options/3.png)
+
+4. Define how you'll know it's successful
+
+![Success metric](docs/scope-options/4.png)
+
+5. Explicitly define what's out of scope
+
+![Out of scope](docs/scope-options/5.png)
+
+6. Answer technical constraint questions
+
+![Constraints](docs/scope-options/6.png)
+
+7. Review concrete options with product and technical tradeoffs
+
+![Options](docs/scope-options/7.png)
+
+8. Select which approach resonates
+
+![Select approach](docs/scope-options/8.png)
+
+9. Get ASCII UI mockups for your chosen approach
+
+![UI mockups](docs/scope-options/9.png)
 
 ### Installation
 
